@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +18,55 @@
             .imahees-medianas{
                 width: 700px;
             }
-            #subt{
-                color: rgba(201, 8, 8, 0.212);
+            #columna-login{
+                background-color: rgb(171, 139, 139);
+            }
+            #titulo-color{
+                color: uurgb(238, 232, 240);
+            }
+            #imagenesDeLosControles{
+                background-color: rgb(163, 82, 82);
             }
         </style>
     </head>
     <body>
-        <h1>Demo</h1>
-        <h2 id="subt">Subtitulo mas pequeño</object></h2>
-        <joa>nada mp escisten los espacios</joa><br/>
-        <img class = "imahees-medianas" src = "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2017/03/age-empires-ii_0.jpg?itok=np24PQwm" />
+        <div class="columns">
+            <div id="columna-imagenPresentacion"class="column is-7"></div>
+            <div id="columna-login"class="column">
+                <div id="columna-imagenPresentacion"class="column">
+                    <p id="titulo-color"class="title is-4">Ingresá tus datos para operar</p>
+                </div>
+                <div class="column">
+                    <label class="label"></label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </div>
+                    <p class="help is-success"></p>
+                </div>
+                <div id="columna-ingresoDatos"class="column">
+                    <div class="field">
+                        <label class="label"></label>
+                        <div class="control">
+                          <input class="input is-normal" type="text" placeholder="Tu clave">
+                        </div>
+                    </div>
+                </div>
+                <div id="columna-ingresoDatos"class="column">
+                    <div class="field">
+                        <label class="label"></label>
+                        <div class="control">
+                          <input class="input is-normal" type="text" placeholder="Tu usuario">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>
