@@ -1,12 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Joaquin nashe</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <style>
+
             body{
                 color:rgb(20, 24, 11);
                 background-color: rgb(254, 255, 255);
@@ -18,55 +23,110 @@
             .imahees-medianas{
                 width: 700px;
             }
+            #tecladoOnline{
+                color : black ;
+                padding: 0.4rem;
+            }
+            #ColorLink{
+                color: rgb(22, 39, 225);
+            }
             #columna-login{
-                background-color: rgb(171, 139, 139);
+                background-color: rgb(255, 255, 255);
+                border: black 0.1px solid;
+            }
+            #iconoColorHerramienta{
+                color: rgb(10, 10, 233);
             }
             #titulo-color{
                 color: uurgb(238, 232, 240);
             }
-            #imagenesDeLosControles{
-                background-color: rgb(163, 82, 82);
+            #iconoColor{
+                color: rgb(0, 0, 0);
+            }
+            #iconopregunta{
+                color: rgb(254, 3, 3);
+            }
+            #botonIngresar{
+                width: 15rem;
             }
         </style>
     </head>
     <body>
         <div class="columns">
             <div id="columna-imagenPresentacion"class="column is-7"></div>
-            <div id="columna-login"class="column">
-                <div id="columna-imagenPresentacion"class="column">
-                    <p id="titulo-color"class="title is-4">Ingresá tus datos para operar</p>
+            <div id="columna-login"class="column is-narrow-mobile">
+                <div id="columna titulo"class="column">
+                    <p id="titulo-color"class="title is-3">Ingresá tus datos para operar</p>
                 </div>
                 <div class="column">
-                    <label class="label"></label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                      </span>
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
+                    <div class="control has-icons-left">
+                      <input id="Input-Text-Clas" class="input is-static is-medium is-rounded  " type="text " placeholder="Tu numero de documento" >
+                      <span id="iconoColor"class="icon is-small is-left">
+                        <ion-icon name="finger-print-outline"></ion-icon>
                       </span>
                     </div>
-                    <p class="help is-success"></p>
                 </div>
-                <div id="columna-ingresoDatos"class="column">
-                    <div class="field">
-                        <label class="label"></label>
-                        <div class="control">
-                          <input class="input is-normal" type="text" placeholder="Tu clave">
-                        </div>
+                <div class="column">
+                    <div class="control has-icons-left has-icons-right ">
+                      <input id="Input-Text-Clas" class="input is-static is-medium is-rounded  " type="text " placeholder="Tu clave" >
+                      <span id="iconoColor"class="icon is-small is-left">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                      </span>
+                      <span id="iconoColor"class="icon is-small is-right">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </span>
                     </div>
                 </div>
-                <div id="columna-ingresoDatos"class="column">
-                    <div class="field">
-                        <label class="label"></label>
-                        <div class="control">
-                          <input class="input is-normal" type="text" placeholder="Tu usuario">
-                        </div>
+                <div class="column">
+                    <div class="control has-icons-left has-icons-right ">
+                      <input id="Input-Text-Clas" class="input is-static is-medium is-rounded  " type="text " placeholder="Tu usuario" >
+                      <span id="iconoColor"class="icon is-small is-left">
+                        <ion-icon name="person-outline"></ion-icon>
+                      </span>
+                      <span id="iconoColor"class="icon is-two is-small is-right">
+                        <ion-icon id="iconopregunta"name="help-outline"></ion-icon>
+                        <ion-icon name="eye-outline"></ion-icon>
+                        </span>
                     </div>
                 </div>
-            </div>
+                <div class="column is-9">
+                    <div class="field">
+                        <div class="control">
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            Recordar mi número de documento</a>
+                          </label>
+                        </div>
+                      </div>
+                </div>
+                <div class="columns">
+                    <article id="clasetecladoUbi" class="media">
+                        <div class="media-left">
+                            <span class="content"><a id="tecladoOnline"><ion-icon name="keypad" aria-hidden="true"></ion-icon>Teclado Virtual</a></span>
+                        </div>
+                    </article>
+                </div>
+                <div class="columns">
+                    <div class="box">
+                        <div class="content">
+                            <article class="media">
+                                <div class="media-left">
+                                    <span class="icon">
+                                        <ion-icon id="iconoColorHerramienta" size="large" id="iconopregunta"name="construct-outline"></ion-icon> 
+                                    </span>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        No te dejes guiar telefónicamente en transacciones en cajeros automáticos. Conocé más consejos de seguridad<strong></strong>
+                                        <a id="ColorLink">Conocé más consejos de seguridad.</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <input id="botonIngresar"class="button" type="submit" value="Submit input">
+                        </div>
+                      </div>
+                    </div>
+                </div>
         </div>
-        
     </body>
 </html>
